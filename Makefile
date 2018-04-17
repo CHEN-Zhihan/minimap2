@@ -17,7 +17,7 @@ else                # if arm_neon is defined
     CFLAGS+=-D_FILE_OFFSET_BITS=64 -mfpu=neon -fsigned-char
     INCLUDES+=-Isse2neon
 endif
-
+$(info OBJS is $(OBJS))
 .PHONY:all extra clean depend
 .SUFFIXES:.c .o
 
